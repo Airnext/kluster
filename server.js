@@ -7,7 +7,7 @@ app.set('port', process.env.PORT || 7600);
 
 app = configure(app);
 
-mongoose.connect('mongodb://localhost:27017/kluster', {useNewUrlParser: true});
+mongoose.connect('mongodb://mongodb+srv://ernestium:AccessMethod781227@cluster0-cuskd.mongodb.net/test?retryWrites=true', {useNewUrlParser: true});
 
 mongoose.connection.on('error', console.error.bind(console, 'Connection Error'));
 
