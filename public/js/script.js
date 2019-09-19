@@ -9,7 +9,7 @@ $(document).ready(function(){
 	// 	});
 	// });
 
-	let remove = false;
+	let remove = false
 
 	$('#btn-delete').on('click',function(event){
 		event.preventDefault();

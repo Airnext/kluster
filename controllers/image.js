@@ -156,8 +156,7 @@ module.exports = {
 				let newComment = new CommentModel(req.body);
 				newComment.image_id = image._id;
 				newComment.gravatar = md5(req.body.email);
-				console.log(newComment.gravatar);
-
+				
 				newComment.save(function(err, comment){
 					res.redirect('/image/' + image.uniqueId + '#' + comment._id);
 				});
