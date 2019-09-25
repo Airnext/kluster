@@ -7,7 +7,7 @@ app.set('port', process.env.PORT || 7600);
 
 app = configure(app);
 
-mongoose.connect('mongodb://ernestium:AccessMethod781227@ds135421.mlab.com:35421/heroku_5shlmndh', {useNewUrlParser: true});
+mongoose.connect('mongodb://heroku_5shlmndh:heroku_5shlmndh@ds135421.mlab.com:35421/heroku_5shlmndh', {useNewUrlParser: true});
 
 mongoose.connection.on('error', console.error.bind(console, 'Connection Error'));
 
